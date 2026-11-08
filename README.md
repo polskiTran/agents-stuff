@@ -35,7 +35,7 @@ agent skills and prompts collected from x, one file per entry.
 | name | author | description |
 | --- | --- | --- |
 | [be-ambitious](skills/meta/be-ambitious.md) | [@daniel_mac8](https://x.com/daniel_mac8) | /be-ambitious rewrites a task into a deeper version of itself, not a bigger one, by naming what a top professional would do, their raw sources, methods and what would prove the result right. Adapted by @daniel_mac8 from Felix Rieseberg's prompt. |
-| [pstack](skills/meta/pstack.md) | [@poteto](https://x.com/poteto) | @poteto's skill pack for high-quality agent coding (poteto-mode, /correct, /architect, /recall, /sharpen, /benchmark-checklist and more). The 0.15.9 release post adds /correct, which turns repeated corrections into architecture, types and checks; @DmitriyLeybel also posted an Opus-written deep dive on it. |
+| [pstack](skills/meta/pstack.md) | [@poteto](https://x.com/poteto) | @poteto's skill pack for high-quality agent coding (poteto-mode, /correct, /architect, /recall, /sharpen, /benchmark-checklist and more). The 0.15.9 release post adds /correct, which turns repeated corrections into architecture, types and checks; @DmitriyLeybel also posted an Opus-written deep dive on it. The state-machine follow-up pairs /create-formal-verification-skill, which generates project-local checks for a scoped property, with /statechart, which checks TLA+ models and visualizes user flows as Mermaid statecharts with shortest paths to rule violations. |
 
 ### research
 
