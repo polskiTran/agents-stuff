@@ -19,6 +19,7 @@ agent skills and prompts collected from x, one file per entry.
 | [code-like-luke](skills/coding/code-like-luke.md) | [@LukeParkerDev](https://x.com/LukeParkerDev) | @LukeParkerDev's /code-like-luke OpenCode slash command for happy-path-first, use-case-oriented design with clear orchestration and strong interfaces. He calls it a 'free deslop alpha'. |
 | [coding-standards.md and errors.md](skills/coding/coding-standards-and-errors.md) | [@dillon_mulroy](https://x.com/dillon_mulroy) | Two portable agent docs @dillon_mulroy carries from project to project instead of many skills: coding standards (monorepo boundaries and more) and error design principles for messages that help humans and agents. |
 | [modern-web-guidance](skills/coding/modern-web-guidance.md) | [@ctatedev](https://x.com/ctatedev) | @ctatedev's skill in vercel-labs/agent-browser that looks up Chrome's Modern Web Guidance, applies it to frontend code, then checks the built page in a real browser for layout shift, reduced motion, dark mode and dialog focus, reporting each rule with evidence. |
+| [prune-tests](skills/coding/prune-tests.md) | [@mazeincoding](https://x.com/mazeincoding) | @mazeincoding's /prune-tests skill from caldoai/skills that finds and removes tests that guard no behavior: tests that change whenever the implementation does, assert deleted features stay gone, or can never fail. |
 | [ub-mode](skills/coding/ub-mode.md) | [@unclebobmartin](https://x.com/unclebobmartin) | Uncle Bob's coding skill that enforces 'first make it work, then make it right, then follow practice', loosely based on poteto's pstack rules and paired with his crapper, dryer and mutator quality-gate tools. |
 
 ### design
@@ -56,6 +57,7 @@ agent skills and prompts collected from x, one file per entry.
 | --- | --- | --- |
 | [anti-slop writing skills (top 10)](skills/writing/anti-slop-skills-roundup.md) | [@juampitech](https://x.com/juampitech) | @juampitech's ranked list of ten anti-slop writing skills: stop-slop, no-ai-slop, humanizer (blader), unslop, slopbeth, humanizer (Aboudjem), deslop, anti-slop, humanize and anti-ai-slop-writing. Links in the order of the post. |
 | [attention-kind output style](skills/writing/attention-kind.md) | [@daniel_mac8](https://x.com/daniel_mac8) | An ADHD-friendly Claude Code output style from @alexgreensh's attention-span repo: answer first, short, arrow-marked points with bold key words. @daniel_mac8 cites 43% shorter output with the same coding pass rate. |
+| [clean-copy](skills/writing/clean-copy.md) | [@chaotictransfem](https://x.com/chaotictransfem) | @chaotictransfem's skill for cutting interface copy that shouldn't exist, such as captions that restate a label, hints that pre-empt a worry the user never had, and warnings that are scar tissue from a fixed bug. The skill text lives at https://paste.rachel.systems/ukogokijaz.md. |
 | [simplified technical english skills](skills/writing/simplified-technical-english-skills.md) | [@andrew_n_carr](https://x.com/andrew_n_carr) | @andrew_n_carr's roundup of community skills built on ASD-STE100 Simplified Technical English to curb agents' invented jargon: a Claude skill, an STE skill kit, writing styles, a runbook skill and an STE checker. |
 | [write-like-leopold](skills/writing/write-like-leopold.md) | [@reach_vb](https://x.com/reach_vb) | A Codex skill for drafting high-stakes investor, partner and incident communications in a direct, candid register inspired by Leopold Aschenbrenner's LP letter. Shared by @reach_vb as a gist. |
 
@@ -66,6 +68,7 @@ agent skills and prompts collected from x, one file per entry.
 | name | author | description |
 | --- | --- | --- |
 | [dara's agents.md (excerpt)](prompts/coding/dara-agents-md.md) | [@daradoescode](https://x.com/daradoescode) | An excerpt of @daradoescode's AGENTS.md for the Weaver widget framework: named concepts (landmine, receipt, tripwire, simple, obvious) and build philosophies. Her linked X article walks through how she wrote it. |
+| [delete-comment](prompts/coding/delete-comment.md) | [@mattpocockuk](https://x.com/mattpocockuk) | @mattpocockuk's prompt that audits every code comment as tautology, excuse, stale or decision record, then deletes or files issues, moves decisions into ADRs, adds a ratcheting lint rule that bans all comments, and creates a /delete-comment skill so the sweep can be repeated. |
 | [e2e-first testing rules](prompts/coding/e2e-first-testing-rules.md) | [@anshnanda](https://x.com/anshnanda) | AGENTS.md testing rules from @anshnanda: no post-hoc unit tests, prefer E2E tests that produce a verifiable artifact, and list failure modes before writing isolated code. |
 | [fix sequential async calls](prompts/coding/fix-sequential-async-calls.md) | [@_dylanga](https://x.com/_dylanga) | A one-line prompt from @_dylanga that scans hot paths for needless sequential async calls; he says the diffs are easy to review. |
 | [justify yourself](prompts/coding/justify-yourself.md) | [@elithrar](https://x.com/elithrar) | Two prompts from @elithrar that force the agent to justify its work: a call graph of changes vs main, and a stack-ranked review of every test with removal candidates. |
@@ -77,6 +80,7 @@ agent skills and prompts collected from x, one file per entry.
 
 | name | author | description |
 | --- | --- | --- |
+| [app polish](prompts/design/app-polish.md) | [@emilkowalski](https://x.com/emilkowalski) | @emilkowalski's prompt to polish an app by testing it in the browser at different widths, with touch emulation and a throttled 3G connection, then fixing what looks broken or feels off, saving before and after screenshots, and sending a summary. |
 | [describe the ux](prompts/design/describe-the-ux.md) | [@steveruizok](https://x.com/steveruizok) | @steveruizok's ask to have an agent describe the UX of your application completely, which surfaces inconsistencies, bugs and design errors. He packaged it as a /product-description skill. |
 | [ux, dx and ax agents.md lines](prompts/design/ux-dx-ax-agents-md-lines.md) | [@Voxyz_ai](https://x.com/Voxyz_ai) | Two AGENTS.md lines from @Voxyz_ai: cut taglines and helper text, and make decisions that improve user, developer and agent experience together. |
 
